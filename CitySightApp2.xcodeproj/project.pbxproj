@@ -21,6 +21,8 @@
 		504654652ADD87AC00050563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		504654682ADD87AC00050563 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		504654732ADD8A6100050563 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		504654752ADDD4A800050563 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		504654762ADDD59C00050563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,11 +55,13 @@
 		504654602ADD87AA00050563 /* CitySightApp2 */ = {
 			isa = PBXGroup;
 			children = (
+				504654762ADDD59C00050563 /* Info.plist */,
 				504654612ADD87AA00050563 /* CitySightApp.swift */,
 				5046546F2ADD88AE00050563 /* Views */,
 				504654702ADD88B000050563 /* ViewModel */,
 				504654712ADD88B300050563 /* Model */,
 				504654672ADD87AC00050563 /* Preview Content */,
+				504654752ADDD4A800050563 /* Config.xcconfig */,
 			);
 			path = CitySightApp2;
 			sourceTree = "<group>";
@@ -175,6 +179,7 @@
 /* Begin XCBuildConfiguration section */
 		5046546A2ADD87AC00050563 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 504654752ADDD4A800050563 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -238,6 +243,7 @@
 		};
 		5046546B2ADD87AC00050563 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 504654752ADDD4A800050563 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -302,6 +308,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CitySightApp2/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CitySightApp2/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Grant location find new restaurants";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -331,6 +338,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CitySightApp2/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CitySightApp2/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Grant location find new restaurants";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
