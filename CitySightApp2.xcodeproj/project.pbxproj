@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		504654622ADD87AA00050563 /* CitySightApp2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504654612ADD87AA00050563 /* CitySightApp2App.swift */; };
-		504654642ADD87AB00050563 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504654632ADD87AB00050563 /* ContentView.swift */; };
+		504654642ADD87AB00050563 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504654632ADD87AB00050563 /* LaunchView.swift */; };
 		504654662ADD87AC00050563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504654652ADD87AC00050563 /* Assets.xcassets */; };
 		504654692ADD87AC00050563 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504654682ADD87AC00050563 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		5046545E2ADD87AA00050563 /* CitySightApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CitySightApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		504654612ADD87AA00050563 /* CitySightApp2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySightApp2App.swift; sourceTree = "<group>"; };
-		504654632ADD87AB00050563 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		504654632ADD87AB00050563 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		504654652ADD87AC00050563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		504654682ADD87AC00050563 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,8 +52,9 @@
 			isa = PBXGroup;
 			children = (
 				504654612ADD87AA00050563 /* CitySightApp2App.swift */,
-				504654632ADD87AB00050563 /* ContentView.swift */,
-				504654652ADD87AC00050563 /* Assets.xcassets */,
+				5046546F2ADD88AE00050563 /* Views */,
+				504654702ADD88B000050563 /* ViewModel */,
+				504654712ADD88B300050563 /* Model */,
 				504654672ADD87AC00050563 /* Preview Content */,
 			);
 			path = CitySightApp2;
@@ -65,6 +66,29 @@
 				504654682ADD87AC00050563 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5046546F2ADD88AE00050563 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				504654632ADD87AB00050563 /* LaunchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		504654702ADD88B000050563 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		504654712ADD88B300050563 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				504654652ADD87AC00050563 /* Assets.xcassets */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				504654642ADD87AB00050563 /* ContentView.swift in Sources */,
+				504654642ADD87AB00050563 /* LaunchView.swift in Sources */,
 				504654622ADD87AA00050563 /* CitySightApp2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
