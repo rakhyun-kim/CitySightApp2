@@ -12,6 +12,9 @@
 		504654662ADD87AC00050563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504654652ADD87AC00050563 /* Assets.xcassets */; };
 		504654692ADD87AC00050563 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504654682ADD87AC00050563 /* Preview Assets.xcassets */; };
 		504654742ADD8A6100050563 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504654732ADD8A6100050563 /* ContentModel.swift */; };
+		504654782ADDDD4D00050563 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504654772ADDDD4D00050563 /* Business.swift */; };
+		5046547A2ADDDEE900050563 /* BusinessSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504654792ADDDEE900050563 /* BusinessSearch.swift */; };
+		5046547D2ADEEABC00050563 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5046547C2ADEEABC00050563 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		504654732ADD8A6100050563 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		504654752ADDD4A800050563 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		504654762ADDD59C00050563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		504654772ADDDD4D00050563 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		504654792ADDDEE900050563 /* BusinessSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearch.swift; sourceTree = "<group>"; };
+		5046547C2ADEEABC00050563 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +61,13 @@
 		504654602ADD87AA00050563 /* CitySightApp2 */ = {
 			isa = PBXGroup;
 			children = (
-				504654762ADDD59C00050563 /* Info.plist */,
 				504654612ADD87AA00050563 /* CitySightApp.swift */,
+				504654752ADDD4A800050563 /* Config.xcconfig */,
+				504654762ADDD59C00050563 /* Info.plist */,
 				5046546F2ADD88AE00050563 /* Views */,
 				504654702ADD88B000050563 /* ViewModel */,
 				504654712ADD88B300050563 /* Model */,
 				504654672ADD87AC00050563 /* Preview Content */,
-				504654752ADDD4A800050563 /* Config.xcconfig */,
 			);
 			path = CitySightApp2;
 			sourceTree = "<group>";
@@ -94,8 +100,19 @@
 			isa = PBXGroup;
 			children = (
 				504654652ADD87AC00050563 /* Assets.xcassets */,
+				504654772ADDDD4D00050563 /* Business.swift */,
+				504654792ADDDEE900050563 /* BusinessSearch.swift */,
+				5046547B2ADEEAA700050563 /* Helpers */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5046547B2ADEEAA700050563 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5046547C2ADEEABC00050563 /* Constants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,8 +186,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				504654642ADD87AB00050563 /* LaunchView.swift in Sources */,
+				504654782ADDDD4D00050563 /* Business.swift in Sources */,
 				504654742ADD8A6100050563 /* ContentModel.swift in Sources */,
+				5046547A2ADDDEE900050563 /* BusinessSearch.swift in Sources */,
 				504654622ADD87AA00050563 /* CitySightApp.swift in Sources */,
+				5046547D2ADEEABC00050563 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
