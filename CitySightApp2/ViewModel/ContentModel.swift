@@ -8,12 +8,16 @@
 import Foundation
 import CoreLocation
 
-class ContentModel: NSObject, ObservableObject, CLLocationManagerDelegate {
+class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject  {
     
     var locationManager = CLLocationManager()
     
+    @Published var authorizationState = CLAuthorizationStatus.notDetermined
+    
     @Published var restaurants = [Business]()
     @Published var sights = [Business]()
+    
+    
     
     override init() {
         
@@ -31,7 +35,11 @@ class ContentModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     // MARK: - Location Manager Delegate Methods
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         
-        if locationManager.authorizationStatus == .authorizedAlways || locationManager.authorizationStatus == .authorizedWhenInUse {
+        // Update the authorizationState property
+        authorizationState = locationManager.authorizationStatus
+        
+        if locationManager.authorizationStatus == .authorizedAlways || 
+            locationManager.authorizationStatus == .authorizedWhenInUse {
             
             // We have permissions
             // Start geolocating the user, after we get permission
@@ -62,11 +70,9 @@ class ContentModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     
     // MARK: - Yelp API methods
     
-    
-    
     func getBusinesses(category:String, location:CLLocation) {
         
-       /* let urlString = "https://api.yelp.com/v3/businesses/search?latitude=\(location.coordinate.latitude)&longitude=\(location.coordinate.longitude)&category)&limit=6"
+       /* let urlString = "https://api.yelp.com/v3/businesses/search?latitude=\(location.coordinate.latitude)&longitude=\(location.coordinate.longitude)&categories=(category)&limit=6"
         
         let url = URL(string: urlString)
         */

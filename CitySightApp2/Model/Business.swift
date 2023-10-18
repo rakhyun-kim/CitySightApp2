@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Business: Decodable {
+struct Business: Decodable, Identifiable {
     
     var id: String?
     var alias: String?
@@ -82,3 +82,4 @@ struct Coordinate: Decodable {
     var latitude: Double?
     var longitude: Double?
 }
+
