@@ -13,7 +13,7 @@ struct BusinessList: View {
     
     var body: some View {
         
-        ScrollView {
+        ScrollView() {
             
             LazyVStack(alignment: .leading, pinnedViews: [.sectionHeaders]) {
                 
@@ -22,6 +22,7 @@ struct BusinessList: View {
                 BusinessSection(title: "Sights", businesses: model.sights)
                     }
                 }
+        .scrollIndicators(.hidden)
                     }
                 }
 
