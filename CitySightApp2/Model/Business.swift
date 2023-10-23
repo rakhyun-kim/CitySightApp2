@@ -76,6 +76,12 @@ class Business: Decodable, Identifiable, ObservableObject {
             dataTask.resume()
         }
     }
+    
+    static func getTestData() -> Business {
+        let b = Business()
+        
+        return b
+    }
 }
 
 struct Location: Decodable {

@@ -16,27 +16,32 @@ struct HomeView: View {
         
         if model.restaurants.count != 0  || model.sights.count != 0 {
             
-            // Determine if we should show list or map
-            if !isMapShowing {
-                // Show list
-                
-                VStack(alignment: .leading) {
-                    HStack {
-                        Image(systemName: "location")
-                        Text("Chicago")
-                        
-                        Spacer()
-                        
-                        Text("Switch to map view")
-                    }	
-                    Divider()
+            NavigationStack {
+                // Determine if we should show list or map
+                if !isMapShowing {
+                    // Show list
                     
-                    BusinessList()
-                }.padding([.horizontal, .top])
-                
-            } else {
-                // Show map
+                    VStack(alignment: .leading) {
+                        HStack {
+                            Image(systemName: "location")
+                            Text("Chicago")
+                            
+                            Spacer()
+                            
+                            Text("Switch to map view")
+                        }
+                        Divider()
+                        
+                        BusinessList()
+                    }.padding([.horizontal, .top])
+                        
+                    
+                } else {
+                    // Show map
+                }
             }
+            
+            
             
         } else {
             // Still waiting for data so show spinner
