@@ -21,6 +21,7 @@
 		504654AB2ADF872200050563 /* BusinessSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504654AA2ADF872200050563 /* BusinessSection.swift */; };
 		504654AD2AE0797200050563 /* BusinessRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504654AC2AE0797200050563 /* BusinessRow.swift */; };
 		509888662AE2D00500E79A03 /* BusinessDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509888652AE2D00500E79A03 /* BusinessDetail.swift */; };
+		50FF43062AE702AE00B87AB7 /* BusinessMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FF43052AE702AE00B87AB7 /* BusinessMap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		504654AA2ADF872200050563 /* BusinessSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSection.swift; sourceTree = "<group>"; };
 		504654AC2AE0797200050563 /* BusinessRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessRow.swift; sourceTree = "<group>"; };
 		509888652AE2D00500E79A03 /* BusinessDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetail.swift; sourceTree = "<group>"; };
+		50FF43052AE702AE00B87AB7 /* BusinessMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessMap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				504654A32ADF6E0200050563 /* HomeView.swift */,
+				50FF43042AE7029200B87AB7 /* Map */,
 				504654A52ADF750E00050563 /* List */,
 			);
 			path = Home;
@@ -155,6 +158,14 @@
 				509888652AE2D00500E79A03 /* BusinessDetail.swift */,
 			);
 			path = List;
+			sourceTree = "<group>";
+		};
+		50FF43042AE7029200B87AB7 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				50FF43052AE702AE00B87AB7 /* BusinessMap.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +247,7 @@
 				509888662AE2D00500E79A03 /* BusinessDetail.swift in Sources */,
 				5046547A2ADDDEE900050563 /* BusinessSearch.swift in Sources */,
 				504654A72ADF752000050563 /* BusinessList.swift in Sources */,
+				50FF43062AE702AE00B87AB7 /* BusinessMap.swift in Sources */,
 				504654AB2ADF872200050563 /* BusinessSection.swift in Sources */,
 				504654622ADD87AA00050563 /* CitySightApp.swift in Sources */,
 				5046547D2ADEEABC00050563 /* Constants.swift in Sources */,
