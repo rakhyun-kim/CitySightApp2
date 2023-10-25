@@ -133,6 +133,7 @@
 		504654A12ADF6DEC00050563 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				509888652AE2D00500E79A03 /* BusinessDetail.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -141,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				504654A32ADF6E0200050563 /* HomeView.swift */,
+				504654A12ADF6DEC00050563 /* Detail */,
 				50FF43042AE7029200B87AB7 /* Map */,
 				504654A52ADF750E00050563 /* List */,
 			);
@@ -154,8 +156,6 @@
 				504654A82ADF860D00050563 /* BusinessSectionHeaders.swift */,
 				504654AA2ADF872200050563 /* BusinessSection.swift */,
 				504654AC2AE0797200050563 /* BusinessRow.swift */,
-				504654A12ADF6DEC00050563 /* Detail */,
-				509888652AE2D00500E79A03 /* BusinessDetail.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
