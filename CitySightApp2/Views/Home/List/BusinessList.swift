@@ -18,8 +18,10 @@ struct BusinessList: View {
             LazyVStack(alignment: .leading, pinnedViews: [.sectionHeaders]) {
                 
                 BusinessSection(title: "Restaurants", businesses: model.restaurants)
+                    .lineLimit(1)
                 
                 BusinessSection(title: "Sights", businesses: model.sights)
+                    .lineLimit(1)
                     }
                 }
         .scrollIndicators(.hidden)
