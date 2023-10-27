@@ -17,8 +17,6 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject  {
     @Published var restaurants = [Business]()
     @Published var sights = [Business]()
     
-    
-    
     override init() {
         
         // Init method of NSObject
@@ -27,9 +25,10 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject  {
         // Set content model as the delegate of the location manager
         locationManager.delegate = self
         
+    }
+    func requestGeolocationPermission() {
         // Request permissoin from the user
         locationManager.requestWhenInUseAuthorization()
-        
     }
     
     // MARK: - Location Manager Delegate Methods
