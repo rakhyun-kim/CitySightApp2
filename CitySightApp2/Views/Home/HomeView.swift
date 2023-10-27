@@ -25,7 +25,7 @@ struct HomeView: View {
                     VStack(alignment: .leading) {
                         HStack {
                             Image(systemName: "location")
-                            Text("Chicago")
+                            Text(model.placeMark?.locality ?? "")
                             
                             Spacer()
                             
@@ -34,8 +34,15 @@ struct HomeView: View {
                             }
                             }
                         Divider()
-                        
-                        BusinessList()
+                        ZStack(alignment: .top){
+                            BusinessList()
+                            
+                            HStack {
+                                Spacer()
+                                YelpAttribution(link: "http://yelp.com")
+                            }
+                            .padding(.trailing, -20)
+                        }
                     }.padding([.horizontal, .top])
                         
                     
@@ -62,7 +69,7 @@ struct HomeView: View {
                             HStack {
                                 Image(systemName: "location")
                                     .padding()
-                                Text("Chicago")
+                                Text(model.placeMark?.locality ?? "")
                                 
                                 Spacer()
                                 

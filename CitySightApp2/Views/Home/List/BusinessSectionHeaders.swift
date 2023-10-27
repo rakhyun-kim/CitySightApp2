@@ -17,6 +17,7 @@ struct BusinessSectionHeaders: View {
             
             Rectangle()
                 .foregroundStyle(.white)
+                .frame(height: 45)
             
             Text(title)
                 .font(.headline)
